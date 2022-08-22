@@ -91,8 +91,6 @@ app.get('/api/me', authenticateToken, (req, res) => {
     res.send(req.user)
 })
 
-process.env.PORT = 3000
-
-app.listen(process.env.PORT, () => {
+app.listen(3000, () => {
     console.log('server run port 3000')
 })
